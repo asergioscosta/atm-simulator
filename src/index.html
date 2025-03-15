@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+    <link rel="icon" type="image/png" href="../public/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="caixa-container">
+        <h1><i class="fas fa-landmark"></i> Caixa Eletrônico</h1>
+        <p><i class="fas fa-wallet"></i> Saldo Atual: <span id="saldo">R$ 0,00</span></p>
+
+        <div class="input-container">
+            <input type="number" id="valor" placeholder="Digite o valor">
+            <i class="fas fa-dollar-sign"></i>
+        </div>
+
+        <div class="buttons-container">
+            <button class="depositar" onclick="depositar()">
+                <i class="fas fa-arrow-down"></i> Depositar
+            </button>
+            <button class="sacar" onclick="sacar()">
+                <i class="fas fa-arrow-up"></i> Sacar
+            </button>
+        </div>
+
+        <h2><i class="fas fa-history"></i> Histórico de Transações</h2>
+        <ul id="historico-transacoes"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
